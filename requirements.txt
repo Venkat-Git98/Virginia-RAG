@@ -9,3 +9,4 @@ scipy
 nltk 
 pydantic 
 regex
+pymupdf4llm
