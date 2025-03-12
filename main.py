@@ -38,7 +38,7 @@ pinecone.init(api_key=PINECONE_API_KEY)
 openai.api_key = OPENAI_API_KEY
 # pc = Pinecone(api_key=PINECONE_API_KEY)
 index = pinecone.Index(PINECONE_INDEX_NAME)
-upload_index = pinecone.Index(PINECONE_INDEX_upload_NAME))  # For uploaded 
+upload_index = pinecone.Index(PINECONE_INDEX_upload_NAME) # For uploaded 
 
 
 st.markdown("""
