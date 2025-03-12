@@ -2,7 +2,10 @@ streamlit
 openai==0.28.0 
 #pinecone-client 
 pymupdf 
-pinecone 
+#pinecone
+pinecone==5.4.0
+pinecone-plugin-inference==2.0.1
+pinecone-plugin-interface==0.0.7
 numpy 
 pandas 
 scipy 
