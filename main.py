@@ -1,6 +1,7 @@
 import streamlit as st
 import openai
-from pinecone import Pinecone
+import pinecone
+#from pinecone import Pinecone
 import json
 from io import BytesIO
 import fitz  # PyMuPDF
