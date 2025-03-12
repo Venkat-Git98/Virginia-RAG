@@ -5,9 +5,19 @@ from collections import defaultdict
 import string 
 import random
 from tqdm import tqdm
+import spacy
+from spacy.cli import download
 
+try:
+    # Attempt to load the spaCy model
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    # If the model isn't found, download it
+    download("en_core_web_sm")
+    # Retry loading the model after installation
+    nlp = spacy.load("en_core_web_sm")
 # Load spaCy model
-nlp = spacy.load("en_core_web_sm")
+# nlp = spacy.load("en_core_web_sm")
 
 def semantic_refinement(chunks):
     """Refines each chunk to ensure semantic coherence."""
