@@ -1,6 +1,7 @@
 streamlit 
 openai==0.28.0 
 #pinecone-client 
+tabulate
 pymupdf 
 #pinecone
 pinecone==5.4.0
