@@ -10,3 +10,4 @@ nltk
 pydantic 
 regex
 pymupdf4llm
+spacy
