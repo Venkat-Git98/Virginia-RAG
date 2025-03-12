@@ -13,6 +13,7 @@ pandas==2.2.2
 requests==2.31.0
 scikit-learn==1.6.1
 scipy==1.13.1
+pymupdf4llm
 
 # NLP and AI libraries
 sentence-transformers==3.0.1
