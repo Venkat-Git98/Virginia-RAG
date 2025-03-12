@@ -1,5 +1,6 @@
 import streamlit as st
 import openai
+import pinecone
 from pinecone import Pinecone
 import json
 from io import BytesIO
@@ -32,12 +33,14 @@ st.set_page_config(
     page_icon="🏗️",
     layout="wide"
 )
-
+# pinecone.init(api_key=PINECONE_API_KEY)
 
 openai.api_key = OPENAI_API_KEY
+# pc = Pinecone(api_key=PINECONE_API_KEY)
 pc = Pinecone(api_key=PINECONE_API_KEY)
 index = pc.Index(PINECONE_INDEX_NAME)  # For Virginia Building Codes
 upload_index = pc.Index(PINECONE_INDEX_upload_NAME)  # For uploaded 
+
 
 
 st.markdown("""

@@ -1,4 +1,5 @@
 from pinecone import Pinecone
+import pinecone
 import json
 from generator import generate_embeddings
 from config import (

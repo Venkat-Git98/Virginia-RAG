@@ -5,9 +5,22 @@ from collections import defaultdict
 import string 
 import random
 from tqdm import tqdm
+import spacy
+from spacy.cli import download
 
-# Load spaCy model
-nlp = spacy.load("en_core_web_sm")
+import spacy
+import subprocess
+import sys
+
+def load_spacy_model(model_name):
+    try:
+        return spacy.load(model_name)
+    except OSError:
+        print(f"Model '{model_name}' not found. Downloading...")
+        subprocess.run([sys.executable, "-m", "spacy", "download", model_name], check=True)
+        return spacy.load(model_name)
+
+nlp = load_spacy_model("en_core_web_sm")
 
 def semantic_refinement(chunks):
     """Refines each chunk to ensure semantic coherence."""
