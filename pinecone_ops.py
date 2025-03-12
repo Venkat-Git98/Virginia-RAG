@@ -1,4 +1,4 @@
-#from pinecone import Pinecone
+from pinecone import Pinecone
 import pinecone
 class PineconeManager:
     def __init__(self, api_key, index_name):
