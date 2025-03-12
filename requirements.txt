@@ -3,7 +3,9 @@ streamlit==1.41.1
 openai==1.12.0
 pinecone-client==2.2.4
 PyMuPDF==1.24.13  # PDF processing
-pinecone
+pinecone==5.4.0
+pinecone-plugin-inference==2.0.1
+pinecone-plugin-interface==0.0.7
 
 # Data handling & processing
 numpy==1.26.4
