@@ -8,16 +8,19 @@ from tqdm import tqdm
 import spacy
 from spacy.cli import download
 
-try:
-    # Attempt to load the spaCy model
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    # If the model isn't found, download it
-    download("en_core_web_sm")
-    # Retry loading the model after installation
-    nlp = spacy.load("en_core_web_sm")
-# Load spaCy model
-# nlp = spacy.load("en_core_web_sm")
+import spacy
+import subprocess
+import sys
+
+def load_spacy_model(model_name):
+    try:
+        return spacy.load(model_name)
+    except OSError:
+        print(f"Model '{model_name}' not found. Downloading...")
+        subprocess.run([sys.executable, "-m", "spacy", "download", model_name], check=True)
+        return spacy.load(model_name)
+
+nlp = load_spacy_model("en_core_web_sm")
 
 def semantic_refinement(chunks):
     """Refines each chunk to ensure semantic coherence."""
