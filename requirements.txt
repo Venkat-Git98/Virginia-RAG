@@ -1,40 +1,11 @@
-# Core dependencies
-streamlit==1.41.1
-openai==1.12.0
-pinecone-client==2.2.4
-PyMuPDF==1.24.13  # PDF processing
-pinecone==5.4.0
-pinecone-plugin-inference==2.0.1
-pinecone-plugin-interface==0.0.7
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
-
-# Data handling & processing
-numpy==1.26.4
-pandas==2.2.2
-requests==2.31.0
-scikit-learn==1.6.1
-scipy==1.13.1
-pymupdf4llm
-
-# NLP and AI libraries
-sentence-transformers==3.0.1
-transformers==4.43.3
-langchain==0.3.7
-spacy>=3.5.0,<3.6.0
-nltk==3.9.1
-textblob==0.17.1  # Optional NLP
-regex==2024.7.24
-
-# Vector Database (Pinecone)
-pinecone==5.4.0
-pinecone-plugin-inference==2.0.1
-pinecone-plugin-interface==0.0.7
-
-# Miscellaneous utilities
-rich==13.9.4
-tqdm==4.66.4
-protobuf==5.27.4
-pydantic==2.8.2
-python-dotenv==1.0.1  # For managing API keys securely
-matplotlib==3.9.2  # Visualization (if needed)
-seaborn==0.13.2  # Data visualization
+streamlit 
+openai==0.28.0 
+pinecone-client 
+pymupdf 
+pinecone 
+numpy 
+pandas 
+scipy 
+nltk 
+pydantic 
+regex
