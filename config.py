@@ -12,9 +12,7 @@ import sys
 sys.path.append(str(SRC_DIR))
 OPENAI_API_KEY = st.secrets["API_KEYS"]["OPENAI_API_KEY"]
 PINECONE_API_KEY = st.secrets["API_KEYS"]["PINECONE_API_KEY"]
-# API Keys
-# OPENAI_API_KEY = "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"
-# PINECONE_API_KEY = "pcsk_m74DA_EoW1zexNTdNSVetA3abdZTgf8su66GumFShesKigC49TLeiHqxwtM6bAyDAWjfQ"
+
 DATA_DIR = BASE_DIR / "data"
 UPLOADED_CODES_DIR = DATA_DIR / "uploaded_codes"
 EXISTING_CODES_DIR = DATA_DIR / "existing_codes"
