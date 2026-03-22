@@ -1,4 +1,0 @@
-google-generativeai
-python-dotenv
-pymupdf
-pymupdf4llm 

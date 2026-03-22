@@ -1,11 +1,7 @@
 # Ignore secrets file
 .streamlit/secrets.toml
-.env
 
 # Ignore virtual environments
 venv/
 __pycache__/
 *.pyc
-
-# Ignore pipeline output data
-backend/data_ingestion_pipeline/output/
